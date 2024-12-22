@@ -1,0 +1,219 @@
+/*
+Theme Name: Marzeneb Theme
+Theme URI: https://example.com/marzeneb-theme
+Author: Bekalu
+Author URI: https://example.com
+Description: A responsive and customizable theme with Elementor integration.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: marzeneb
+*/
+/* General Theme Styles */
+wp_enqueue_style('custom-css', get_template_directory_uri() . '/assets/css/custom.css', ['bootstrap-css'], '1.0.0', 'all');
+.navbar {
+    background-color: #333 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.main-navigation {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.main-navigation .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-navigation .menu-list li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.main-navigation .menu-list li a {
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.main-navigation .menu-list li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-navigation .menu-list li:hover ul {
+    display: block;
+}
+
+.main-navigation .menu-list li ul li {
+    margin: 0;
+}
+
+.main-navigation .menu-list li ul li a {
+    padding: 5px 15px;
+}
+.main-navigation .menu-list {
+    display: flex;
+    gap: 20px; /* Space between items */
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation .menu-list li {
+    list-style-position: inside; /* Ensures bullets are inside the content box */
+}
+
+.main-navigation .menu-list li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.main-navigation .menu-list li a:hover {
+    color: #ff0000; /* Hover color */
+}
+/* Apply Google Font Poppins or fallback to sans-serif */
+body {
+    font-family: 'Poppins', sans-serif; /* Poppins font with fallback */
+    font-weight: 400; /* Regular weight */
+    font-size: 16px; /* Base font size */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Default text color */
+    background-color: #f8f9fa; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply the same font family to headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bold weight for headings */
+}
+
+/* Style for paragraphs */
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Links */
+a {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Apply to buttons */
+button, .btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bold weight for buttons */
+}
+
+/* Footer and other text elements */
+footer {
+    font-family: 'Poppins', sans-serif;
+    color: #666; /* Lighter color for footer text */
+}
+
+/* Add some margin and padding for a clean layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.home.blog {
+    /* Example Fix for Overlapping Styles */
+    margin: 0;
+    padding: 0;
+}
+/* Sidebar Styling */
+.sidebar-area {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.widget-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.widget li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+.widget_custom_info_widget img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.widget_custom_info_widget p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.footer-widget {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer-widget-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-widget p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.footer-widget .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.footer-widget .read-more:hover {
+    background-color: #0056b3;
+}
+
